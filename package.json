@@ -1,0 +1,29 @@
+{
+  "name": "advanced_react",
+  "version": "1.0.0",
+  "main": "./lib/server.js",
+  "scripts": {
+    "start": "node ./lib/server.js",
+    "dev": "pm2 start ./lib/server.js --watch --interpreter babel-node "
+  },
+  "babel":{
+    "presets": ["react","env","stage-2"]
+  },
+  "repository": "https://github.com/khalilliu/advanced-react.git",
+  "author": "khalilliu <lkhaliliu@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-eslint": "^8.2.1",
+    "eslint": "^4.15.0",
+    "eslint-plugin-react": "^7.5.1"
+  },
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "pm2": "^2.9.1"
+  }
+}
